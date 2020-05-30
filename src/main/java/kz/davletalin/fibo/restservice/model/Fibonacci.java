@@ -3,18 +3,27 @@ package kz.davletalin.fibo.restservice.model;
 import java.math.BigInteger;
 
 public class Fibonacci {
-    private BigInteger fibonacciValue;
+    private long index;
+    private BigInteger value;
 
     public Fibonacci(BigInteger fibonacciValue) {
-        this.fibonacciValue = fibonacciValue;
+        this.value = fibonacciValue;
     }
 
-    public BigInteger getFibonacciValue() {
-        return fibonacciValue;
+    public long getIndex() {
+        return index;
     }
 
-    public void setFibonacciValue(BigInteger fibonacciValue) {
-        this.fibonacciValue = fibonacciValue;
+    public void setIndex(long index) {
+        this.index = index;
+    }
+
+    public BigInteger getValue() {
+        return value;
+    }
+
+    public void setValue(BigInteger value) {
+        this.value = value;
     }
 }
 
